@@ -18,8 +18,6 @@ This plugin adds a 'Scroll to top' integration features to [OctoberCMS](http://o
   * **Background Color**: CSS color attribute of the background
   * **Background Hover Color**: CSS color attribute of the background when the user hovers over it
 
-######If you have any suggestions about new features, feel free to write an issue in the Support section of this page.
-
 ## Documentation
 It is a pretty simple plugin, so not much to talk about. It adds the **scrollToTop** object to the page, which contains all the information the Component needs to function as you customized it.
 
