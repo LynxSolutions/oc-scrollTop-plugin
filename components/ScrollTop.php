@@ -17,98 +17,108 @@ class ScrollTop extends ComponentBase
     {
         return [
             'speedScrollTopLynx' => [
-                'title'             => 'Speed',
-                'description'       => 'Time in milliseconds it takes for the scroll to end',
-                'default'           => 300,
-                'type'              => 'string',
-                'validationPattern' => '^[0-9]*$',
-                'validationMessage' => 'The "Speed" property can contain only numeric symbols'
+                'title'                 => 'Speed',
+                'description'           => 'Time in milliseconds it takes for the scroll to end',
+                'default'               => 300,
+                'type'                  => 'string',
+                'validationPattern'     => '^[0-9]*$',
+                'validationMessage'     => 'The "Speed" property can contain only numeric symbols',
+                'showExternalParameter' => false
             ],
             'sizeScrollLynx'            => [
-                'title'             => 'Size',
-                'description'       => 'Size of the button in pixels',
-                'default'           => '50',
-                'type'              => 'string',
-                'validationPattern' => '^[0-9]*$',
-                'validationMessage' => 'The "Size" property can contain only numeric symbols'
+                'title'                 => 'Size',
+                'description'           => 'Size of the button in pixels',
+                'default'               => '50',
+                'type'                  => 'string',
+                'validationPattern'     => '^[0-9]*$',
+                'validationMessage'     => 'The "Size" property can contain only numeric symbols',
+                'showExternalParameter' => false
             ],
             'positionScrollLynx' => [
-                'title'              => 'Position',
-                'description'        => 'Select where you want to button to appear',
-                'type'               => 'dropdown',
-                'default'            => 'bottomright',
-                'options'            => [
+                'title'                 => 'Position',
+                'description'           => 'Select where you want to button to appear',
+                'type'                  => 'dropdown',
+                'default'               => 'bottomright',
+                'options'               => [
                     'bottomright' => 'Bottom Right',
                     'bottomleft'  => 'Bottom Left',
                     'topright'    => 'Top Right',
                     'topleft'     => 'Top Left',
                 ],
-                'group'              => 'position'
+                'group'                 => 'position',
+                'showExternalParameter' => false
             ],
             'UnitScrollLynx' => [
-                'title'              => 'Unit',
-                'description'        => 'Select the measurement unit you want to use to position the button',
-                'type'               => 'dropdown',
-                'default'            => '%',
-                'options'            => [
+                'title'                 => 'Unit',
+                'description'           => 'Select the measurement unit you want to use to position the button',
+                'type'                  => 'dropdown',
+                'default'               => '%',
+                'options'               => [
                     'px'    => 'Pixel(px)',
                     '%'     => 'Percent(%)'
                 ],
-                'group'              => 'position'
+                'group'                 => 'position',
+                'showExternalParameter' => false
             ],
             'horizontalUnitsScrollLynx' => [
-                'title'              => 'Units from Left/Right',
-                'description'        => 'Units from the Side (right or left, depending on your selection of positioning)',
-                'type'               => 'string',
-                'default'            => 2,
-                'group'              => 'position',
-                'validationPattern'  => '^[0-9]*$',
-                'validationMessage'  => 'The "Units from Left/Right" property can contain only numeric symbols'
+                'title'                 => 'Units from Left/Right',
+                'description'           => 'Units from the Side (right or left, depending on your selection of positioning)',
+                'type'                  => 'string',
+                'default'               => 2,
+                'group'                 => 'position',
+                'validationPattern'     => '^[0-9]*$',
+                'validationMessage'     => 'The "Units from Left/Right" property can contain only numeric symbols',
+                'showExternalParameter' => false
             ],
             'verticalUnitsScrollLynx' => [
-                'title'              => 'Units from Top/Bottom',
-                'description'        => 'Units from Top/Bottom (depending on your selection of positioning)',
-                'type'               => 'string',
-                'default'            => 7,
-                'group'              => 'position',
-                'validationPattern'  => '^[0-9]*$',
-                'validationMessage'  => 'The "Units from Top/Bottom" property can contain only numeric symbols'
+                'title'                 => 'Units from Top/Bottom',
+                'description'           => 'Units from Top/Bottom (depending on your selection of positioning)',
+                'type'                  => 'string',
+                'default'               => 7,
+                'group'                 => 'position',
+                'validationPattern'     => '^[0-9]*$',
+                'validationMessage'     => 'The "Units from Top/Bottom" property can contain only numeric symbols',
+                'showExternalParameter' => false
             ],
             'arrowColorScrollLynx' => [
-                'title'             => 'Arrow Color',
-                'description'       => 'CSS color attribute of the arrow',
-                'default'           => '#000',
-                'type'              => 'string',
-                'validationPattern' => '#([a-fA-F0-9]){3}(([a-fA-F0-9]){3})?\b',
-                'validationMessage' => 'The "Arrow Color" needs to be a hex color code',
-                'group'             => 'color'
+                'title'                 => 'Arrow Color',
+                'description'           => 'CSS color attribute of the arrow',
+                'default'               => '#000',
+                'type'                  => 'string',
+                'validationPattern'     => '#([a-fA-F0-9]){3}(([a-fA-F0-9]){3})?\b',
+                'validationMessage'     => 'The "Arrow Color" needs to be a hex color code',
+                'group'                 => 'color',
+                'showExternalParameter' => false
             ],
             'arrowHoverColorScrollLynx' => [
-                'title'             => 'Arrow Hover Color',
-                'description'       => 'CSS color attribute of the arrow when the user hoveres over it',
-                'default'           => '#2E2E2E',
-                'type'              => 'string',
-                'validationPattern' => '#([a-fA-F0-9]){3}(([a-fA-F0-9]){3})?\b',
-                'validationMessage' => 'The "Arrow Color" needs to be a hex color code',
-                'group'             => 'color'
+                'title'                 => 'Arrow Hover Color',
+                'description'           => 'CSS color attribute of the arrow when the user hoveres over it',
+                'default'               => '#2E2E2E',
+                'type'                  => 'string',
+                'validationPattern'     => '#([a-fA-F0-9]){3}(([a-fA-F0-9]){3})?\b',
+                'validationMessage'     => 'The "Arrow Color" needs to be a hex color code',
+                'group'                 => 'color',
+                'showExternalParameter' => false
             ],
             'backgroundColorScrollLynx' => [
-                'title'             => 'Background Color',
-                'description'       => 'CSS color attribute of the background',
-                'default'           => '#FFF',
-                'type'              => 'string',
-                'validationPattern' => '#([a-fA-F0-9]){3}(([a-fA-F0-9]){3})?\b',
-                'validationMessage' => 'The "Background Color" needs to be a hex color code',
-                'group'             => 'color'
+                'title'                 => 'Background Color',
+                'description'           => 'CSS color attribute of the background',
+                'default'               => '#FFF',
+                'type'                  => 'string',
+                'validationPattern'     => '#([a-fA-F0-9]){3}(([a-fA-F0-9]){3})?\b',
+                'validationMessage'     => 'The "Background Color" needs to be a hex color code',
+                'group'                 => 'color',
+                'showExternalParameter' => false
             ],
             'backgroundHoverColorScrollLynx' => [
-                'title'             => 'Background Hover Color',
-                'description'       => 'CSS color attribute of the background when the user hoveres over it',
-                'default'           => '#E6E6E6',
-                'type'              => 'string',
-                'validationPattern' => '#([a-fA-F0-9]){3}(([a-fA-F0-9]){3})?\b',
-                'validationMessage' => 'The "Background Color" needs to be a hex color code',
-                'group'             => 'color'
+                'title'                 => 'Background Hover Color',
+                'description'           => 'CSS color attribute of the background when the user hoveres over it',
+                'default'               => '#E6E6E6',
+                'type'                  => 'string',
+                'validationPattern'     => '#([a-fA-F0-9]){3}(([a-fA-F0-9]){3})?\b',
+                'validationMessage'     => 'The "Background Color" needs to be a hex color code',
+                'group'                 => 'color',
+                'showExternalParameter' => false
             ],
         ];
     }
