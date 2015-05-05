@@ -127,16 +127,16 @@ class ScrollTop extends ComponentBase
     {
         $this->ScrollTop = new stdClass();
 
-        $this->ScrollTop->speed             = $this->propertyOrParam('speedScrollTopLynx');
-        $this->ScrollTop->position          = $this->propertyOrParam('positionScrollLynx');
-        $this->ScrollTop->unit              = $this->propertyOrParam('UnitScrollLynx');
-        $this->ScrollTop->horizontalUnits   = $this->propertyOrParam('horizontalUnitsScrollLynx');
-        $this->ScrollTop->verticalUnits     = $this->propertyOrParam('verticalUnitsScrollLynx');
-        $this->ScrollTop->arrowColor        = $this->propertyOrParam('arrowColorScrollLynx');
-        $this->ScrollTop->arrowHoverColor   = $this->propertyOrParam('arrowHoverColorScrollLynx');
-        $this->ScrollTop->backgroundColor   = $this->propertyOrParam('backgroundColorScrollLynx');
-        $this->ScrollTop->backgroundHoverColor = $this->propertyOrParam('backgroundHoverColorScrollLynx');
-        $this->ScrollTop->size              = $this->propertyOrParam('sizeScrollLynx');
+        $this->ScrollTop->speed                = $this->property('speedScrollTopLynx');
+        $this->ScrollTop->position             = $this->property('positionScrollLynx');
+        $this->ScrollTop->unit                 = $this->property('UnitScrollLynx');
+        $this->ScrollTop->horizontalUnits      = $this->property('horizontalUnitsScrollLynx');
+        $this->ScrollTop->verticalUnits        = $this->property('verticalUnitsScrollLynx');
+        $this->ScrollTop->arrowColor           = $this->property('arrowColorScrollLynx');
+        $this->ScrollTop->arrowHoverColor      = $this->property('arrowHoverColorScrollLynx');
+        $this->ScrollTop->backgroundColor      = $this->property('backgroundColorScrollLynx');
+        $this->ScrollTop->backgroundHoverColor = $this->property('backgroundHoverColorScrollLynx');
+        $this->ScrollTop->size                 = $this->property('sizeScrollLynx');
 
         $this->page['scrollToTop'] = $this->ScrollTop;
 
