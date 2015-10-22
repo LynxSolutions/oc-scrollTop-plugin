@@ -125,7 +125,7 @@ class ScrollTop extends ComponentBase
 
     public function onRun()
     {
-        $this->ScrollTop = new stdClass();
+        $ScrollTop = new stdClass();
 
         $ScrollTop->speed                = $this->property('speedScrollTopLynx');
         $ScrollTop->position             = $this->property('positionScrollLynx');
