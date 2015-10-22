@@ -127,18 +127,18 @@ class ScrollTop extends ComponentBase
     {
         $this->ScrollTop = new stdClass();
 
-        $this->ScrollTop->speed                = $this->property('speedScrollTopLynx');
-        $this->ScrollTop->position             = $this->property('positionScrollLynx');
-        $this->ScrollTop->unit                 = $this->property('UnitScrollLynx');
-        $this->ScrollTop->horizontalUnits      = $this->property('horizontalUnitsScrollLynx');
-        $this->ScrollTop->verticalUnits        = $this->property('verticalUnitsScrollLynx');
-        $this->ScrollTop->arrowColor           = $this->property('arrowColorScrollLynx');
-        $this->ScrollTop->arrowHoverColor      = $this->property('arrowHoverColorScrollLynx');
-        $this->ScrollTop->backgroundColor      = $this->property('backgroundColorScrollLynx');
-        $this->ScrollTop->backgroundHoverColor = $this->property('backgroundHoverColorScrollLynx');
-        $this->ScrollTop->size                 = $this->property('sizeScrollLynx');
+        $ScrollTop->speed                = $this->property('speedScrollTopLynx');
+        $ScrollTop->position             = $this->property('positionScrollLynx');
+        $ScrollTop->unit                 = $this->property('UnitScrollLynx');
+        $ScrollTop->horizontalUnits      = $this->property('horizontalUnitsScrollLynx');
+        $ScrollTop->verticalUnits        = $this->property('verticalUnitsScrollLynx');
+        $ScrollTop->arrowColor           = $this->property('arrowColorScrollLynx');
+        $ScrollTop->arrowHoverColor      = $this->property('arrowHoverColorScrollLynx');
+        $ScrollTop->backgroundColor      = $this->property('backgroundColorScrollLynx');
+        $ScrollTop->backgroundHoverColor = $this->property('backgroundHoverColorScrollLynx');
+        $ScrollTop->size                 = $this->property('sizeScrollLynx');
 
-        $this->page['scrollToTop'] = $this->ScrollTop;
+        $this->page['scrollToTop'] = $ScrollTop;
 
         // Add css
         $this->addCss('assets/css/default.css');
